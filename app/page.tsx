@@ -55,8 +55,10 @@ export default function Home() {
                   Your events retrieved from Microsoft Graph for the day week:
                 </p>
                 <ul>
-                  {events.map((elm: any) => (
-                    <li id="events">{`${elm.subject} - From  ${new Date(
+                  {events.map((idx: any, elm: any) => (
+                    <li id="events" key={elm.subject}>{`${
+                      elm.subject
+                    } - From  ${new Date(
                       elm.start.dateTime
                     ).toLocaleString()} to ${new Date(
                       elm.end.dateTime
