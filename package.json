@@ -9,7 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@azure/msal-browser": "^3.19.1",
+    "@azure/msal-node": "^2.11.1",
+    "@azure/msal-react": "^2.0.21",
     "@microsoft/microsoft-graph-client": "^3.0.7",
+    "@types/microsoft-graph": "^2.40.0",
+    "isomorphic-fetch": "^3.0.0",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18"
