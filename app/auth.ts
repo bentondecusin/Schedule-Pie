@@ -13,7 +13,7 @@ import {
 //MSAL configuration
 export const msalConfig = {
   auth: {
-    clientId: process.env.CLIENT_ID || "",
+    clientId: process.env.NEXT_PUBLIC_CLIENT_ID || "",
     // authority: authority ID
     // redirectUri: "https://localhost:8080",
   },
